@@ -1,0 +1,400 @@
+-- Aspect Hub
+-- Version: 0.01
+
+-- Instances:
+
+local AspectHub = Instance.new("ScreenGui")
+local Background = Instance.new("Frame")
+local ScriptHub = Instance.new("TextButton")
+local GamesHub_Roundify_12px = Instance.new("ImageLabel")
+local CommandsHub = Instance.new("TextButton")
+local GamesHub_Roundify_12px_2 = Instance.new("ImageLabel")
+local Scripts = Instance.new("Frame")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local SCPScript = Instance.new("TextButton")
+local GamesHub_Roundify_12px_3 = Instance.new("ImageLabel")
+local OwlHub = Instance.new("TextButton")
+local GamesHub_Roundify_12px_4 = Instance.new("ImageLabel")
+local Commands = Instance.new("Frame")
+local ScrollingFrame_2 = Instance.new("ScrollingFrame")
+local Speed = Instance.new("TextButton")
+local GamesHub_Roundify_12px_5 = Instance.new("ImageLabel")
+local Fly = Instance.new("TextButton")
+local GamesHub_Roundify_12px_6 = Instance.new("ImageLabel")
+local Welcome = Instance.new("Frame")
+local WelcomeText = Instance.new("TextLabel")
+local WelcomeText_Roundify_12px = Instance.new("ImageLabel")
+local Exit = Instance.new("TextButton")
+local Exit_Roundify_12px = Instance.new("ImageLabel")
+
+--Properties:
+
+AspectHub.Name = "Aspect Hub"
+AspectHub.Parent = game.CoreGui
+
+Background.Name = "Background"
+Background.Parent = AspectHub
+Background.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Background.Position = UDim2.new(0.319999993, 0, 0.249536887, 0)
+Background.Size = UDim2.new(0, 462, 0, 280)
+Background.Active = true
+Background.Draggable = true
+
+ScriptHub.Name = "ScriptHub"
+ScriptHub.Parent = Background
+ScriptHub.BackgroundColor3 = Color3.fromRGB(115, 115, 115)
+ScriptHub.BackgroundTransparency = 1.000
+ScriptHub.BorderSizePixel = 0
+ScriptHub.Position = UDim2.new(0.0151515156, 0, 0.021428572, 0)
+ScriptHub.Size = UDim2.new(0, 119, 0, 43)
+ScriptHub.ZIndex = 2
+ScriptHub.Font = Enum.Font.SourceSans
+ScriptHub.Text = "Scripts"
+ScriptHub.TextColor3 = Color3.fromRGB(234, 254, 255)
+ScriptHub.TextSize = 18.000
+ScriptHub.MouseButton1Click:connect(function()
+	Welcome.Visible = false
+	Commands.Visible = false
+	Scripts.Visible = true
+end)
+
+GamesHub_Roundify_12px.Name = "GamesHub_Roundify_12px"
+GamesHub_Roundify_12px.Parent = ScriptHub
+GamesHub_Roundify_12px.Active = true
+GamesHub_Roundify_12px.AnchorPoint = Vector2.new(0.5, 0.5)
+GamesHub_Roundify_12px.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GamesHub_Roundify_12px.BackgroundTransparency = 1.000
+GamesHub_Roundify_12px.Position = UDim2.new(0.5, 0, 0.5, 0)
+GamesHub_Roundify_12px.Selectable = true
+GamesHub_Roundify_12px.Size = UDim2.new(1, 0, 1, 0)
+GamesHub_Roundify_12px.Image = "rbxassetid://3570695787"
+GamesHub_Roundify_12px.ImageColor3 = Color3.fromRGB(38, 38, 38)
+GamesHub_Roundify_12px.ScaleType = Enum.ScaleType.Slice
+GamesHub_Roundify_12px.SliceCenter = Rect.new(100, 100, 100, 100)
+GamesHub_Roundify_12px.SliceScale = 0.120
+
+CommandsHub.Name = "CommandsHub"
+CommandsHub.Parent = Background
+CommandsHub.BackgroundColor3 = Color3.fromRGB(115, 115, 115)
+CommandsHub.BackgroundTransparency = 1.000
+CommandsHub.BorderSizePixel = 0
+CommandsHub.Position = UDim2.new(0.0151515156, 0, 0.821428597, 0)
+CommandsHub.Size = UDim2.new(0, 119, 0, 43)
+CommandsHub.ZIndex = 2
+CommandsHub.Font = Enum.Font.SourceSans
+CommandsHub.Text = "Commands"
+CommandsHub.TextColor3 = Color3.fromRGB(234, 254, 255)
+CommandsHub.TextSize = 18.000
+CommandsHub.MouseButton1Click:connect(function()
+	Welcome.Visible = false
+	Scripts.Visible = false
+	Commands.Visible = true
+end)
+
+
+GamesHub_Roundify_12px_2.Name = "GamesHub_Roundify_12px"
+GamesHub_Roundify_12px_2.Parent = CommandsHub
+GamesHub_Roundify_12px_2.Active = true
+GamesHub_Roundify_12px_2.AnchorPoint = Vector2.new(0.5, 0.5)
+GamesHub_Roundify_12px_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GamesHub_Roundify_12px_2.BackgroundTransparency = 1.000
+GamesHub_Roundify_12px_2.Position = UDim2.new(0.5, 0, 0.5, 0)
+GamesHub_Roundify_12px_2.Selectable = true
+GamesHub_Roundify_12px_2.Size = UDim2.new(1, 0, 1, 0)
+GamesHub_Roundify_12px_2.Image = "rbxassetid://3570695787"
+GamesHub_Roundify_12px_2.ImageColor3 = Color3.fromRGB(38, 38, 38)
+GamesHub_Roundify_12px_2.ScaleType = Enum.ScaleType.Slice
+GamesHub_Roundify_12px_2.SliceCenter = Rect.new(100, 100, 100, 100)
+GamesHub_Roundify_12px_2.SliceScale = 0.120
+
+Scripts.Name = "Scripts"
+Scripts.Parent = Background
+Scripts.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Scripts.BackgroundTransparency = 1.000
+Scripts.Size = UDim2.new(0, 462, 0, 280)
+Scripts.Visible = false
+
+ScrollingFrame.Parent = Scripts
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+ScrollingFrame.Position = UDim2.new(0.29437229, 0, 0.153571427, 0)
+ScrollingFrame.Size = UDim2.new(0, 326, 0, 237)
+
+SCPScript.Name = "SCPScript"
+SCPScript.Parent = ScrollingFrame
+SCPScript.BackgroundColor3 = Color3.fromRGB(115, 115, 115)
+SCPScript.BackgroundTransparency = 1.000
+SCPScript.BorderSizePixel = 0
+SCPScript.Position = UDim2.new(0.0984447747, 0, 0.0499999821, 0)
+SCPScript.Size = UDim2.new(0, 106, 0, 38)
+SCPScript.ZIndex = 2
+SCPScript.Font = Enum.Font.SourceSans
+SCPScript.Text = "SCP Roleplay"
+SCPScript.TextColor3 = Color3.fromRGB(234, 254, 255)
+SCPScript.TextSize = 18.000
+SCPScript.MouseButton1Click:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/PheonixFlags0h/Faqz/main/Script",true))()
+end)
+
+GamesHub_Roundify_12px_3.Name = "GamesHub_Roundify_12px"
+GamesHub_Roundify_12px_3.Parent = SCPScript
+GamesHub_Roundify_12px_3.Active = true
+GamesHub_Roundify_12px_3.AnchorPoint = Vector2.new(0.5, 0.5)
+GamesHub_Roundify_12px_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GamesHub_Roundify_12px_3.BackgroundTransparency = 1.000
+GamesHub_Roundify_12px_3.Position = UDim2.new(0.5, 0, 0.51515156, 0)
+GamesHub_Roundify_12px_3.Selectable = true
+GamesHub_Roundify_12px_3.Size = UDim2.new(1, 0, 0.969697058, 0)
+GamesHub_Roundify_12px_3.Image = "rbxassetid://3570695787"
+GamesHub_Roundify_12px_3.ImageColor3 = Color3.fromRGB(38, 38, 38)
+GamesHub_Roundify_12px_3.ScaleType = Enum.ScaleType.Slice
+GamesHub_Roundify_12px_3.SliceCenter = Rect.new(100, 100, 100, 100)
+GamesHub_Roundify_12px_3.SliceScale = 0.120
+
+OwlHub.Name = "OwlHub"
+OwlHub.Parent = ScrollingFrame
+OwlHub.BackgroundColor3 = Color3.fromRGB(115, 115, 115)
+OwlHub.BackgroundTransparency = 1.000
+OwlHub.BorderSizePixel = 0
+OwlHub.Position = UDim2.new(0.561407745, 0, 0.0499999821, 0)
+OwlHub.Size = UDim2.new(0, 106, 0, 38)
+OwlHub.ZIndex = 2
+OwlHub.Font = Enum.Font.SourceSans
+OwlHub.Text = "OwlHub"
+OwlHub.TextColor3 = Color3.fromRGB(234, 254, 255)
+OwlHub.TextSize = 18.000
+OwlHub.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://athoi21.xyz/owlhub"))()
+end)
+
+GamesHub_Roundify_12px_4.Name = "GamesHub_Roundify_12px"
+GamesHub_Roundify_12px_4.Parent = OwlHub
+GamesHub_Roundify_12px_4.Active = true
+GamesHub_Roundify_12px_4.AnchorPoint = Vector2.new(0.5, 0.5)
+GamesHub_Roundify_12px_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GamesHub_Roundify_12px_4.BackgroundTransparency = 1.000
+GamesHub_Roundify_12px_4.Position = UDim2.new(0.5, 0, 0.51515156, 0)
+GamesHub_Roundify_12px_4.Selectable = true
+GamesHub_Roundify_12px_4.Size = UDim2.new(1, 0, 0.969697058, 0)
+GamesHub_Roundify_12px_4.Image = "rbxassetid://3570695787"
+GamesHub_Roundify_12px_4.ImageColor3 = Color3.fromRGB(38, 38, 38)
+GamesHub_Roundify_12px_4.ScaleType = Enum.ScaleType.Slice
+GamesHub_Roundify_12px_4.SliceCenter = Rect.new(100, 100, 100, 100)
+GamesHub_Roundify_12px_4.SliceScale = 0.120
+
+Commands.Name = "Commands"
+Commands.Parent = Background
+Commands.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Commands.BackgroundTransparency = 1.000
+Commands.Size = UDim2.new(0, 462, 0, 280)
+Commands.Visible = false
+
+ScrollingFrame_2.Parent = Commands
+ScrollingFrame_2.Active = true
+ScrollingFrame_2.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+ScrollingFrame_2.Position = UDim2.new(0.29437229, 0, 0.153571427, 0)
+ScrollingFrame_2.Size = UDim2.new(0, 326, 0, 237)
+
+Speed.Name = "Speed"
+Speed.Parent = ScrollingFrame_2
+Speed.BackgroundColor3 = Color3.fromRGB(115, 115, 115)
+Speed.BackgroundTransparency = 1.000
+Speed.BorderSizePixel = 0
+Speed.Position = UDim2.new(0.0984447747, 0, 0.0499999821, 0)
+Speed.Size = UDim2.new(0, 106, 0, 38)
+Speed.ZIndex = 2
+Speed.Font = Enum.Font.SourceSans
+Speed.Text = "Speed"
+Speed.TextColor3 = Color3.fromRGB(234, 254, 255)
+Speed.TextSize = 18.000
+Speed.MouseButton1Click:connect(function()
+	local speed = 70
+
+	game:GetService("Players").LocalPlayer.Character.Humanoid.WalkSpeed = speed
+	game:GetService("Players").LocalPlayer.Character.Humanoid.JumpPower = (speed * 1.5)
+end)
+
+GamesHub_Roundify_12px_5.Name = "GamesHub_Roundify_12px"
+GamesHub_Roundify_12px_5.Parent = Speed
+GamesHub_Roundify_12px_5.Active = true
+GamesHub_Roundify_12px_5.AnchorPoint = Vector2.new(0.5, 0.5)
+GamesHub_Roundify_12px_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GamesHub_Roundify_12px_5.BackgroundTransparency = 1.000
+GamesHub_Roundify_12px_5.Position = UDim2.new(0.5, 0, 0.51515156, 0)
+GamesHub_Roundify_12px_5.Selectable = true
+GamesHub_Roundify_12px_5.Size = UDim2.new(1, 0, 0.969697058, 0)
+GamesHub_Roundify_12px_5.Image = "rbxassetid://3570695787"
+GamesHub_Roundify_12px_5.ImageColor3 = Color3.fromRGB(38, 38, 38)
+GamesHub_Roundify_12px_5.ScaleType = Enum.ScaleType.Slice
+GamesHub_Roundify_12px_5.SliceCenter = Rect.new(100, 100, 100, 100)
+GamesHub_Roundify_12px_5.SliceScale = 0.120
+
+Fly.Name = "Fly"
+Fly.Parent = ScrollingFrame_2
+Fly.BackgroundColor3 = Color3.fromRGB(115, 115, 115)
+Fly.BackgroundTransparency = 1.000
+Fly.BorderSizePixel = 0
+Fly.Position = UDim2.new(0.561407745, 0, 0.0499999821, 0)
+Fly.Size = UDim2.new(0, 106, 0, 38)
+Fly.ZIndex = 2
+Fly.Font = Enum.Font.SourceSans
+Fly.Text = "Fly"
+Fly.TextColor3 = Color3.fromRGB(234, 254, 255)
+Fly.TextSize = 18.000
+Fly.MouseButton1Click:connect(function()
+	repeat wait() until game.Players.LocalPlayer and game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:findFirstChild("Torso") and game.Players.LocalPlayer.Character:findFirstChild("Humanoid")
+	local mouse = game.Players.LocalPlayer:GetMouse()
+	repeat wait() until mouse
+	local plr = game.Players.LocalPlayer
+	local torso = plr.Character.Torso
+	local flying = true
+	local deb = true
+	local ctrl = {f = 0, b = 0, l = 0, r = 0}
+	local lastctrl = {f = 0, b = 0, l = 0, r = 0}
+	local maxspeed = 50
+	local speed = 0
+
+	function Fly()
+		local bg = Instance.new("BodyGyro", torso)
+		bg.P = 9e4
+		bg.maxTorque = Vector3.new(9e9, 9e9, 9e9)
+		bg.cframe = torso.CFrame
+		local bv = Instance.new("BodyVelocity", torso)
+		bv.velocity = Vector3.new(0,0.1,0)
+		bv.maxForce = Vector3.new(9e9, 9e9, 9e9)
+		repeat wait()
+			if ctrl.l + ctrl.r ~= 0 or ctrl.f + ctrl.b ~= 0 then
+				speed = speed+.5+(speed/maxspeed)
+				if speed > maxspeed then
+					speed = maxspeed
+				end
+			elseif not (ctrl.l + ctrl.r ~= 0 or ctrl.f + ctrl.b ~= 0) and speed ~= 0 then
+				speed = speed-1
+				if speed < 0 then
+					speed = 0
+				end
+			end
+			if (ctrl.l + ctrl.r) ~= 0 or (ctrl.f + ctrl.b) ~= 0 then
+				bv.velocity = ((game.Workspace.CurrentCamera.CoordinateFrame.lookVector * (ctrl.f+ctrl.b)) + ((game.Workspace.CurrentCamera.CoordinateFrame * CFrame.new(ctrl.l+ctrl.r,(ctrl.f+ctrl.b)*.2,0).p) - game.Workspace.CurrentCamera.CoordinateFrame.p))*speed
+				lastctrl = {f = ctrl.f, b = ctrl.b, l = ctrl.l, r = ctrl.r}
+			elseif (ctrl.l + ctrl.r) == 0 and (ctrl.f + ctrl.b) == 0 and speed ~= 0 then
+				bv.velocity = ((game.Workspace.CurrentCamera.CoordinateFrame.lookVector * (lastctrl.f+lastctrl.b)) + ((game.Workspace.CurrentCamera.CoordinateFrame * CFrame.new(lastctrl.l+lastctrl.r,(lastctrl.f+lastctrl.b)*.2,0).p) - game.Workspace.CurrentCamera.CoordinateFrame.p))*speed
+			else
+				bv.velocity = Vector3.new(0,0.1,0)
+			end
+			bg.cframe = game.Workspace.CurrentCamera.CoordinateFrame * CFrame.Angles(-math.rad((ctrl.f+ctrl.b)*50*speed/maxspeed),0,0)
+		until not flying
+		ctrl = {f = 0, b = 0, l = 0, r = 0}
+		lastctrl = {f = 0, b = 0, l = 0, r = 0}
+		speed = 0
+		bg:Destroy()
+		bv:Destroy()
+	end
+	mouse.KeyDown:connect(function(key)
+		if key:lower() == "e" then
+			if flying then flying = false
+			else
+				flying = true
+				Fly()
+			end
+		elseif key:lower() == "w" then
+			ctrl.f = 1
+		elseif key:lower() == "s" then
+			ctrl.b = -1
+		elseif key:lower() == "a" then
+			ctrl.l = -1
+		elseif key:lower() == "d" then
+			ctrl.r = 1
+		end
+	end)
+	mouse.KeyUp:connect(function(key)
+		if key:lower() == "w" then
+			ctrl.f = 0
+		elseif key:lower() == "s" then
+			ctrl.b = 0
+		elseif key:lower() == "a" then
+			ctrl.l = 0
+		elseif key:lower() == "d" then
+			ctrl.r = 0
+		end
+	end)
+	Fly()
+
+GamesHub_Roundify_12px_6.Name = "GamesHub_Roundify_12px"
+GamesHub_Roundify_12px_6.Parent = Fly
+GamesHub_Roundify_12px_6.Active = true
+GamesHub_Roundify_12px_6.AnchorPoint = Vector2.new(0.5, 0.5)
+GamesHub_Roundify_12px_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GamesHub_Roundify_12px_6.BackgroundTransparency = 1.000
+GamesHub_Roundify_12px_6.Position = UDim2.new(0.5, 0, 0.51515156, 0)
+GamesHub_Roundify_12px_6.Selectable = true
+GamesHub_Roundify_12px_6.Size = UDim2.new(1, 0, 0.969697058, 0)
+GamesHub_Roundify_12px_6.Image = "rbxassetid://3570695787"
+GamesHub_Roundify_12px_6.ImageColor3 = Color3.fromRGB(38, 38, 38)
+GamesHub_Roundify_12px_6.ScaleType = Enum.ScaleType.Slice
+GamesHub_Roundify_12px_6.SliceCenter = Rect.new(100, 100, 100, 100)
+GamesHub_Roundify_12px_6.SliceScale = 0.120
+
+Welcome.Name = "Welcome"
+Welcome.Parent = Background
+Welcome.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+Welcome.BackgroundTransparency = 1.000
+Welcome.Size = UDim2.new(0, 462, 0, 280)
+Welcome.ZIndex = 3
+
+WelcomeText.Name = "WelcomeText"
+WelcomeText.Parent = Welcome
+WelcomeText.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+WelcomeText.BackgroundTransparency = 1.000
+WelcomeText.BorderSizePixel = 0
+WelcomeText.Position = UDim2.new(0.33116883, 0, 0.174999997, 0)
+WelcomeText.Size = UDim2.new(0, 291, 0, 178)
+WelcomeText.ZIndex = 6
+WelcomeText.Font = Enum.Font.SourceSans
+WelcomeText.Text = "Welcome To The Official Aspect Hub!"
+WelcomeText.TextColor3 = Color3.fromRGB(255, 255, 255)
+WelcomeText.TextSize = 20.000
+
+WelcomeText_Roundify_12px.Name = "WelcomeText_Roundify_12px"
+WelcomeText_Roundify_12px.Parent = WelcomeText
+WelcomeText_Roundify_12px.AnchorPoint = Vector2.new(0.5, 0.5)
+WelcomeText_Roundify_12px.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+WelcomeText_Roundify_12px.Position = UDim2.new(0.5, 0, 0.512477219, 0)
+WelcomeText_Roundify_12px.Size = UDim2.new(1, 0, 1.00875342, 0)
+WelcomeText_Roundify_12px.ZIndex = 5
+WelcomeText_Roundify_12px.Image = "rbxassetid://3570695787"
+WelcomeText_Roundify_12px.ImageColor3 = Color3.fromRGB(44, 44, 44)
+WelcomeText_Roundify_12px.ScaleType = Enum.ScaleType.Slice
+WelcomeText_Roundify_12px.SliceCenter = Rect.new(100, 100, 100, 100)
+WelcomeText_Roundify_12px.SliceScale = 0.120
+
+Exit.Name = "Exit"
+Exit.Parent = game.StarterGui.Aspect Hub.Background
+Exit.BackgroundColor3 = Color3.fromRGB(115, 115, 115)
+Exit.BackgroundTransparency = 1.000
+Exit.BorderSizePixel = 0
+Exit.Position = UDim2.new(0.906926394, 0, 0.021428572, 0)
+Exit.Size = UDim2.new(0, 37, 0, 30)
+Exit.ZIndex = 2
+Exit.Font = Enum.Font.Nunito
+Exit.Text = "x"
+Exit.TextColor3 = Color3.fromRGB(234, 254, 255)
+Exit.TextSize = 25.000
+
+Exit_Roundify_12px.Name = "Exit_Roundify_12px"
+Exit_Roundify_12px.Parent = Exit
+Exit_Roundify_12px.Active = true
+Exit_Roundify_12px.AnchorPoint = Vector2.new(0.5, 0.5)
+Exit_Roundify_12px.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Exit_Roundify_12px.BackgroundTransparency = 1.000
+Exit_Roundify_12px.Position = UDim2.new(0.5, 0, 0.5, 0)
+Exit_Roundify_12px.Selectable = true
+Exit_Roundify_12px.Size = UDim2.new(1, 0, 1, 0)
+Exit_Roundify_12px.Image = "rbxassetid://3570695787"
+Exit_Roundify_12px.ImageColor3 = Color3.fromRGB(38, 38, 38)
+Exit_Roundify_12px.ScaleType = Enum.ScaleType.Slice
+Exit_Roundify_12px.SliceCenter = Rect.new(100, 100, 100, 100)
+Exit_Roundify_12px.SliceScale = 0.120
+Exit.MouseButton1Click:connect(function()
+	Background.Visible = false	
+end)
