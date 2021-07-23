@@ -369,7 +369,7 @@ WelcomeText_Roundify_12px.SliceCenter = Rect.new(100, 100, 100, 100)
 WelcomeText_Roundify_12px.SliceScale = 0.120
 
 Exit.Name = "Exit"
-Exit.Parent = game.StarterGui.Aspect Hub.Background
+Exit.Parent = Background
 Exit.BackgroundColor3 = Color3.fromRGB(115, 115, 115)
 Exit.BackgroundTransparency = 1.000
 Exit.BorderSizePixel = 0
