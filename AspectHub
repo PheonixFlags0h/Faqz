@@ -26,6 +26,7 @@ local WelcomeText = Instance.new("TextLabel")
 local WelcomeText_Roundify_12px = Instance.new("ImageLabel")
 local Exit = Instance.new("TextButton")
 local Exit_Roundify_12px = Instance.new("ImageLabel")
+local Logo = Instance.new("ImageButton")
 
 --Properties:
 
@@ -41,11 +42,11 @@ Background.Active = true
 Background.Draggable = true
 
 ScriptHub.Name = "ScriptHub"
-ScriptHub.Parent = Background
+ScriptHub.Parent = game.StarterGui.AspectHub.Background
 ScriptHub.BackgroundColor3 = Color3.fromRGB(115, 115, 115)
 ScriptHub.BackgroundTransparency = 1.000
 ScriptHub.BorderSizePixel = 0
-ScriptHub.Position = UDim2.new(0.0151515156, 0, 0.021428572, 0)
+ScriptHub.Position = UDim2.new(0.0151515156, 0, 0.357142866, 0)
 ScriptHub.Size = UDim2.new(0, 119, 0, 43)
 ScriptHub.ZIndex = 2
 ScriptHub.Font = Enum.Font.SourceSans
@@ -53,8 +54,19 @@ ScriptHub.Text = "Scripts"
 ScriptHub.TextColor3 = Color3.fromRGB(234, 254, 255)
 ScriptHub.TextSize = 18.000
 ScriptHub.MouseButton1Click:connect(function()
-	Welcome.Visible = false
-	Commands.Visible = false
+	for loop = 1,10 do
+		wait(0.1)
+		Welcome.BackgroundTransparency = loop/10
+		wait(0.3)
+		Welcome.Visible = false
+	end
+	for loop = 1,10 do
+		wait(0.1)
+		Commands.BackgroundTransparency = loop/10
+		wait(0.3)
+		Commands.Visible = false
+	end	
+
 	Scripts.Visible = true
 end)
 
@@ -86,8 +98,19 @@ CommandsHub.Text = "Commands"
 CommandsHub.TextColor3 = Color3.fromRGB(234, 254, 255)
 CommandsHub.TextSize = 18.000
 CommandsHub.MouseButton1Click:connect(function()
-	Welcome.Visible = false
-	Scripts.Visible = false
+	for loop = 1,10 do
+		wait(0.1)
+		Welcome.BackgroundTransparency = loop/10
+		wait(0.3)
+		Welcome.Visible = false
+	end
+	for loop = 1,10 do
+		wait(0.1)
+		Scripts.BackgroundTransparency = loop/10
+		wait(0.3)
+		Scripts.Visible = false
+	end	
+
 	Commands.Visible = true
 end)
 
@@ -293,6 +316,30 @@ WelcomeText_Roundify_12px.ImageColor3 = Color3.fromRGB(44, 44, 44)
 WelcomeText_Roundify_12px.ScaleType = Enum.ScaleType.Slice
 WelcomeText_Roundify_12px.SliceCenter = Rect.new(100, 100, 100, 100)
 WelcomeText_Roundify_12px.SliceScale = 0.120
+
+Logo.Name = "Logo"
+Logo.Parent = game.StarterGui.AspectHub.Background
+Logo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Logo.BackgroundTransparency = 1.000
+Logo.Position = UDim2.new(0.0346320346, 0, 0, 0)
+Logo.Size = UDim2.new(0, 100, 0, 100)
+Logo.Image = "http://www.roblox.com/asset/?id=7143490686"
+Logo.MouseButton1Click:connect(function()
+	for loop = 1,10 do
+		wait(0.1)
+		Commands.BackgroundTransparency = loop/10
+		wait(0.3)
+		Commands.Visible = false
+	end
+	for loop = 1,10 do
+		wait(0.1)
+		Scripts.BackgroundTransparency = loop/10
+		wait(0.3)
+		Scripts.Visible = false
+	end	
+
+	Welcome.Visible = true
+end)
 
 Exit.Name = "Exit"
 Exit.Parent = Background
